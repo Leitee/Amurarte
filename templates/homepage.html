@@ -1,0 +1,339 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block titulo %} Bienvenido {% endblock %}
+{% block content %}
+
+ <!-- Publicaciones -->
+
+	<section id="main-slider">
+        <div class="owl-carousel">
+            <div class="item" style="background-image: url(images/slider/bg1.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h2><span>Multi</span> is the best Onepage html template</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
+                                    <a class="btn btn-primary btn-lg" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+
+
+             <div class="item" style="background-image: url({% static 'images/slider/bg2.jpg' %});">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h2>Beautifully designed <span>free</span> one page template</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
+                                    <a class="btn btn-primary btn-lg" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.owl-carousel-->
+    </section><!--/#main-slider-->
+
+    
+
+    <section id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Graffitis</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+
+
+                    <img class="img-responsive" src="{% static 'images/galeria/aryz a b 4.jpg' %}" alt="">
+                </div>
+                <div class="col-sm-6">
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Obra</h4>
+                            <p>El hombre moderno en la vida contemporanea. Sufrimiento, Rutina, Estres.</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Autor</h4>
+                            <p>Pepe Argento (El impenetrable, Chaco 1976 - Todavia sigue vivo).
+                                Telefono: 3789685423</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Ubicación</h4>
+                            <p>Laguna Arguello, Calle Siempre Viva 555, Chaco</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Trabajos Disponibles</h2>
+                <p class="text-center wow fadeInDown">Elige el trabajo que mas te interese. <br> Podras ver tus propuestas.</p>
+            </div>
+
+            <div class="text-center">
+                <ul class="portfolio-filter">
+                    <li><a class="active" href="#" data-filter="*">Todos</a></li>
+                    <li><a href="#" data-filter=".muro">Muros</a></li>
+                    <li><a href="#" data-filter=".fachada">Fachadas</a></li>
+                    <li><a href="#" data-filter=".interior">Interiores</a></li>
+                </ul><!--/#portfolio-filter-->
+            </div>
+
+            <div class="portfolio-items">
+                <div class="portfolio-item interior">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/galeria/ladrillo-visto-en-paredes-de-interior.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Interior 3x2</h3>
+                            <a href="trabajoMural.html" target="_blank">Ver Detalles</a>
+                            <a class="preview" href="images/galeria/ladrillo-visto-en-paredes-de-interior.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item fachada muro">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/galeria/01-SpY-graffitiremoval-before.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Muro de Frente</h3>
+                            <a href="">Ver Detalles</a>
+                            <a class="preview" href="images/galeria/01-SpY-graffitiremoval-before.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item fachada">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-1.jpg" height="250" alt="">
+                        <div class="portfolio-info">
+                            <h3>Fachada Familiar</h3>
+                            <a href="">Ver Detalles</a>
+                            <a class="preview" href="images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item fachada">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-3.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Fachada Oficina</h3>
+                            <a href="">Ver Detalles</a>
+                            <a class="preview" href="images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item interior ">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/galeria/departamento-vacio-600x435.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Interior Cocina</h3>
+                            <a href="">Ver Detalles</a>
+                            <a class="preview" href="images/galeria/departamento-vacio-600x435.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item interior">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/galeria/12-cmyk.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Interior Oficina</h3>
+                            <a href="">Ver Detalles</a>
+                            <a class="preview" href="images/galeria/12-cmyk.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item muro">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/galeria/muralantesde.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Muro Supermercado</h3>
+                            <a href="">Ver Detalles</a>
+                            <a class="preview" href="images/galeria/muralantesde.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item muro">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/galeria/42C.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Pared Exterior</h3>
+                            <a href="">Ver Detalles</a>
+                            <a class="preview" href="images/galeria/42C.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+            </div>
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
+
+    <section id="meet-team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Los Mejores de Esta Semana</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/01.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Juan Perez</h3>
+                            <span>Artista Callejero</span>
+                        </div>
+                        <p>Soy el mejor del mundo, amante del grafitti, me encanta la bondiola con cocido.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/02.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Jane "La Yesi" Alvarez</h3>
+                            <span>Diseñadora</span>
+                        </div>
+                        <p>Me gusta el diseño de interiores, amantes de las plantas y la naturaleza</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/03.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Pablo Lezcano</h3>
+                            <span>Arquitecto</span>
+                        </div>
+                        <p>Graduado en la UNNE con posgrado en un lugar importante que no lo voy a decir.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/04.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Nasir Buddin</h3>
+                            <span>Estudiante</span>
+                        </div>
+                        <p>Soy pintor desde los 8 años, musico, escritor, productor, vivo al dia.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+
+        </div>
+    </section><!--/#meet-team-->
+
+    <section id="get-in-touch">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Get in Touch</h2>
+                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+        </div>
+    </section><!--/#get-in-touch-->
+
+    <section id="contact">
+        <div id="google-map" style="height:650px" data-latitude="52.365629" data-longitude="4.871331"></div>
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-8">
+                        <div class="contact-form">
+                            <h3>Contact Info</h3>
+
+                            <address>
+                              <strong>Twitter, Inc.</strong><br>
+                              795 Folsom Ave, Suite 600<br>
+                              San Francisco, CA 94107<br>
+                              <abbr title="Phone">P:</abbr> (123) 456-7890
+                            </address>
+
+                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+{% endblock %}
