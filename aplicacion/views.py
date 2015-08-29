@@ -6,7 +6,6 @@ from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 
 @login_required
-def publi_detalle(request, publi_id):
-	publi = Publicacion.objects.filter(categoria_id=publi_id)
+def publi_detalle(request):
 	return render_to_response('publi_detalle.html',
-		{'publis':publi}, context_instance=RequestContext(request))
+		context_instance=RequestContext(request))
