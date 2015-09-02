@@ -93,8 +93,7 @@
         </div>
     </section>
 
-
-    <section id="portfolio">
+       <section id="portfolio">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Trabajos Disponibles</h2>
@@ -113,13 +112,13 @@
             <div class="portfolio-items">
                 <div class="portfolio-item interior">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/galeria/ladrillo-visto-en-paredes-de-interior.jpg" alt="">
+                        <img class="img-responsive" src="{% static 'images/galeria/ladrillo-visto-en-paredes-de-interior.jpg' %}" alt="">
                         <div class="portfolio-info">
                             <h3>Interior 3x2</h3>
 
-                            
+                            {% url 'publi_detalle' %}
 
-                            <a href="{% url 'publi_detalle' %}" target="_blank">Ver Detalles</a>
+                            <a href=" {% url 'publi_detalle' %}" target="_blank">Ver Detalles</a>
                             <a class="preview" href="images/galeria/ladrillo-visto-en-paredes-de-interior.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -127,85 +126,74 @@
 
                 <div class="portfolio-item fachada muro">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/galeria/01-SpY-graffitiremoval-before.jpg" alt="">
+                        <img class="img-responsive" src="{% static 'images/galeria/01-SpY-graffitiremoval-before.jpg' %}" alt="">
                         <div class="portfolio-info">
                             <h3>Muro de Frente</h3>
                             <a href="">Ver Detalles</a>
-                            <a class="preview" href="images/galeria/01-SpY-graffitiremoval-before.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{% static 'images/galeria/01-SpY-graffitiremoval-before.jpg' %}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item fachada">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-1.jpg" height="250" alt="">
+                        <img class="img-responsive" src="{% static 'images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-1.jpg' %}" height="250" alt="">
                         <div class="portfolio-info">
                             <h3>Fachada Familiar</h3>
                             <a href="">Ver Detalles</a>
-                            <a class="preview" href="images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{% static 'images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-1.jpg' %}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item fachada">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-3.jpg" alt="">
+                        <img class="img-responsive" src="{% static 'images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-3.jpg' %}" alt="">
                         <div class="portfolio-info">
                             <h3>Fachada Oficina</h3>
                             <a href="">Ver Detalles</a>
-                            <a class="preview" href="images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{% static 'images/galeria/Creativas-Imágenes-De-Fachadas-De-Casas-Modernas-3.jpg' %}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item interior ">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/galeria/departamento-vacio-600x435.jpg" alt="">
+                        <img class="img-responsive" src="{% static 'images/galeria/departamento-vacio-600x435.jpg' %}" alt="">
                         <div class="portfolio-info">
                             <h3>Interior Cocina</h3>
                             <a href="">Ver Detalles</a>
-                            <a class="preview" href="images/galeria/departamento-vacio-600x435.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{% static 'images/galeria/departamento-vacio-600x435.jpg' %}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item interior">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/galeria/12-cmyk.jpg" alt="">
+                        <img class="img-responsive" src="{% static 'images/galeria/12-cmyk.jpg' %}" alt="">
                         <div class="portfolio-info">
                             <h3>Interior Oficina</h3>
                             <a href="">Ver Detalles</a>
-                            <a class="preview" href="images/galeria/12-cmyk.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{% static 'images/galeria/12-cmyk.jpg' %}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
-
                 <div class="portfolio-item muro">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/galeria/muralantesde.jpg" alt="">
+                        <img class="img-responsive" src="{% static 'images/galeria/muralantesde.jpg' %}
+						" alt="">
                         <div class="portfolio-info">
                             <h3>Muro Supermercado</h3>
                             <a href="">Ver Detalles</a>
-                            <a class="preview" href="images/galeria/muralantesde.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{% static 'images/galeria/muralantesde.jpg' %}
+							" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
+                </section>
 
-                <div class="portfolio-item muro">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/galeria/42C.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Pared Exterior</h3>
-                            <a href="">Ver Detalles</a>
-                            <a class="preview" href="images/galeria/42C.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-            </div>
-        </div><!--/.container-->
-    </section><!--/#portfolio-->
 
-    <section id="meet-team">
+         <section id="meet-team">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Los Mejores de Esta Semana</h2>
@@ -215,7 +203,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/01.jpg" alt="">
+                            <img class="img-responsive" src="{% static 'images/team/01.jpg' %}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Juan Perez</h3>
@@ -233,7 +221,8 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/02.jpg" alt="">
+                            <img class="img-responsive" src="{% static 'images/team/02.jpg' %}" alt="">
+
                         </div>
                         <div class="team-info">
                             <h3>Jane "La Yesi" Alvarez</h3>
@@ -251,7 +240,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/03.jpg" alt="">
+                            <img class="img-responsive" src="{% static 'images/team/03.jpg' %}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Pablo Lezcano</h3>
@@ -269,7 +258,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="images/team/04.jpg" alt="">
+                            <img class="img-responsive" src="{% static 'images/team/04.jpg' %}" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Nasir Buddin</h3>
@@ -291,6 +280,7 @@
 
         </div>
     </section><!--/#meet-team-->
+
 
     <section id="get-in-touch">
         <div class="container">
